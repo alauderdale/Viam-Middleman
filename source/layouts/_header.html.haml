@@ -3,7 +3,7 @@
 		.pull-left
 			%a.logo{:href=>"#"}
 		.pull-right
-			%ul.list-inline
+			%ul.list-inline.desktop-nav
 				%li
 					%a{:href=>"#"}
 						Company
@@ -19,5 +19,24 @@
 				%li
 					%a{:href=>"#"}
 						Contact
-			%a.menu-drop{:href=>"#"}
-				%i.fa.fa-bars
+			%a.menu-toggle#js-menu-button{:href=>"#"}
+				%i.fa.fa-navicon
+%nav.menu-drop
+	%section
+		.container
+			%ul.list-unstyled.mobile-nav
+				%li
+					%a{:href=>"#"}
+						Company
+				%li
+					%a{:href=>"#"}
+						Industries
+				%li
+					%a{:href=>"#"}
+						Services
+				%li
+					%a{:href=>"#"}
+						Partners
+				%li
+					%a{:href=>"#"}
+						Contact
