@@ -1,0 +1,14 @@
+a{
+	color:$link-color;
+	&:hover{
+		text-decoration:none;
+	}
+}
+
+.btn{
+	border-radius:$base-border-radius;
+	&.btn-primary{
+		background-color:$link-color;
+		border:$link-color;
+	}
+}

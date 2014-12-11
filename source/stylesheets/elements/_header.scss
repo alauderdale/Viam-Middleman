@@ -1,0 +1,40 @@
+header{
+	position:fixed;
+	top:0;
+	&.main-nav-container{
+		z-index: 100;
+		display:inline-block;
+		width: 100%;
+		background:white;
+		padding:$baseline/2 0;
+		box-shadow:0 1px 0 rgba(0,0,0,.1);
+		a{
+			color:tint($text-color,30%);
+			&.logo{
+				width:126px;
+				height:80px;
+				display:block;
+				background:url(../images/logo.png);
+			}
+		}
+		ul{
+			margin-top:$baseline;
+			li{
+				font-size:.8em;
+				margin-left:$baseline;
+				text-transform:uppercase;
+				font-family:$bold-font-name;
+			}
+			@include breakpoint(sm) {
+		    display:none;
+		  }
+		}
+		.menu-drop{
+			display:none;
+			@include breakpoint(sm) {
+		    display:block;
+		    margin-top:$baseline;
+		  }
+		}
+	}
+}
