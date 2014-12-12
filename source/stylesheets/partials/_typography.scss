@@ -184,6 +184,19 @@
 
 }
 
+@font-face {
+    font-family: 'brandon_grotesqueRgIt';
+    src: url('../font/brandon_reg_it-webfont.eot');
+    src: url('../font/brandon_reg_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/brandon_reg_it-webfont.woff2') format('woff2'),
+         url('../font/brandon_reg_it-webfont.woff') format('woff'),
+         url('../font/brandon_reg_it-webfont.ttf') format('truetype'),
+         url('../font/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .text-columns-2{
   @include columns($text-column-gutter-width 2);
 }
@@ -307,7 +320,7 @@ h6 {
 p{
   color:$body-text-color;
   line-height:1.8em;
-  margin-bottom:$baseline;
+  margin-bottom:$baseline/2;
 }
 
 .signature{
@@ -329,15 +342,18 @@ p{
 
 
 ul.list-default{
-  list-style-image:url(../images/bullet.png);
+  // list-style-image:url(../images/bullet.png);
+  color:black;
+  font-size:.8em;
   margin-bottom:$baseline;
+  margin-left:$baseline;
 }
 
 ul.list-checks{
   list-style-image:url(../images/check.png);
   margin-bottom:$baseline;
   li{
-    font-size:.9em;
+    font-size:.8em;
     margin-left:$baseline;
     margin-bottom:$baseline;
   }

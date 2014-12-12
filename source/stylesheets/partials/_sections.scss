@@ -1,6 +1,9 @@
 //sections
 section{
-  padding:$baseline*2 0;
+  padding:$baseline*3 0;
+  &.off-white-bg{
+  	background:url(../images/off_white_sec_bg.png) repeat-y right;
+  }
 }
 
 

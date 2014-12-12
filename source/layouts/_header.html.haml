@@ -4,7 +4,7 @@
 			%a.logo{:href=>"#"}
 		.pull-right
 			%ul.list-inline.desktop-nav
-				%li
+				%li.active
 					%a{:href=>"#"}
 						Company
 				%li
@@ -19,24 +19,26 @@
 				%li
 					%a{:href=>"#"}
 						Contact
-			%a.menu-toggle#js-menu-button{:href=>"#"}
+			%a.menu-toggle#js-menu-button-open{:href=>"#"}
 				%i.fa.fa-navicon
 %nav.menu-drop
-	%section
-		.container
-			%ul.list-unstyled.mobile-nav
-				%li
-					%a{:href=>"#"}
-						Company
-				%li
-					%a{:href=>"#"}
-						Industries
-				%li
-					%a{:href=>"#"}
-						Services
-				%li
-					%a{:href=>"#"}
-						Partners
-				%li
-					%a{:href=>"#"}
-						Contact
+	.container
+		%a.menu-toggle.pull-right#js-menu-button-close{:href=>"#"}
+			%i.fa.fa-times
+		.clearfix
+		%ul.list-unstyled.mobile-nav-main
+			%li.active
+				%a{:href=>"#"}
+					Company
+			%li
+				%a{:href=>"#"}
+					Industries
+			%li
+				%a{:href=>"#"}
+					Services
+			%li
+				%a{:href=>"#"}
+					Partners
+			%li
+				%a{:href=>"#"}
+					Contact

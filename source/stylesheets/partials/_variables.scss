@@ -3,7 +3,7 @@
 $primary-color: #ff6600;
 $secondary-color: #0084b4;
 $tertiary-color: #2f7bbd;
-$light-gray-color: #f2f2f2;
+$light-gray-color: #fafafa;
 
 $gray-color:#dddddd;
 $green-color: #85C342;
@@ -20,6 +20,7 @@ $dark-text-color: #323a45;
 
 
 $link-color: $secondary-color;
+$link-hover-color:shade($secondary-color,50%);
 $background-color: #ffffff;
 
 // units
@@ -35,8 +36,13 @@ $regular-font-name:'open_sansregular', Helvetica, Arial, sans-serif;
 $medium-font-name:'open_sanssemibold', Helvetica, Arial, sans-serif;
 $bold-font-name:'open_sansbold', Helvetica, Arial, sans-serif;
 $extra-bold-font-name:'open_sansextrabold', Helvetica, Arial, sans-serif;
-$flourish-font-name: 'brandon_grotesquebold';
+$flourish-font-name-bold: 'brandon_grotesquebold';
+$flourish-font-name-italic: 'brandon_grotesqueRgIt';
 $social-font-name: 'socialicoregular';
+
+//transitions
+
+$base-transition-duration:.2s;
 
 //text columns
 
