@@ -1,0 +1,57 @@
+#company_tabs{:role => "tabpanel"}
+  / Nav tabs
+  %ul.nav.nav-tabs.margin-top{:role => "tablist"}
+    %li.active{:role => "presentation"}
+      %a{"aria-controls" => "honesty", "data-toggle" => "tab", :href => "#honesty", :role => "tab"} 
+        %img.img-responsive{:src=>"/images/company/company_tab_search_inactive.png"}
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "transparency", "data-toggle" => "tab", :href => "#transparency", :role => "tab"} 
+        %img.img-responsive{:src=>"/images/company/company_tab_transparency_inactive.png"}
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "confidentiality", "data-toggle" => "tab", :href => "#confidentiality", :role => "tab"} 
+        %img.img-responsive{:src=>"/images/company/company_tab_conf_inactive.png"}
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "respect", "data-toggle" => "tab", :href => "#respect", :role => "tab"} 
+        %img.img-responsive{:src=>"/images/company/company_tab_env_inactive.png"}
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "quality", "data-toggle" => "tab", :href => "#quality", :role => "tab"} 
+        %img.img-responsive{:src=>"/images/company/company_tab_quality_inactive.png"}
+    %li{:role => "presentation"}
+      %a{"aria-controls" => "simple", "data-toggle" => "tab", :href => "#simple", :role => "tab"} 
+        %img.img-responsive{:src=>"/images/company/company_tab_simple_inactive.png"}
+  / Tab panes
+  .row
+    .col-sm-1
+    .col-sm-10
+      .tab-content.margin-top
+        #honesty.tab-pane.fade.in.active{:role => "tabpanel"} 
+          %h5.text-uppercase
+            Honesty
+          %p
+            Wherever you work or play, you can count on VIAM to fill in your ‘communications gaps’ with reliable, affordable, best-in-class telecommunications with all the capacity and coverage you need. If you’re in a region that’s lags behind in connectivity, VIAM puts technology to work so you can get ahead
+        #transparency.tab-pane.fade{:role => "tabpanel"}
+          %h5.text-uppercase
+            Transparency 
+          %p
+            We are always up front about the way we operate because we know that bad news or uncomfortable truths will eventually always rise to the surface. 
+        #confidentiality.tab-pane.fade{:role => "tabpanel"}
+          %h5.text-uppercase
+            Confidentiality  
+          %p
+            We fully respect and support the right to privacy of all the companies and individuals we work with.  
+        #respect.tab-pane.fade{:role => "tabpanel"}
+          %h5.text-uppercase
+            Respect for the Environment  
+          %p
+            We frequently work in pristine locations and do our utmost to preserve the integrity and natural beauty of each one of them.
+        #quality.tab-pane.fade{:role => "tabpanel"}
+          %h5.text-uppercase
+            Quality Solutions  
+          %p
+            We believe there’s no substitute for state-of-the-art performance. To achieve this goal, we only work with the highest quality parts and equipment. 
+        #simple.tab-pane.fade{:role => "tabpanel"}
+          %h5.text-uppercase
+            Keeping Things Simple   
+          %p
+            Enabling communications is complex work, however, we always do our best to simplify things as much as possible to deliver the best results. 
+    .col-sm-1

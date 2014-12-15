@@ -1,0 +1,25 @@
+#global-footer{
+	border-top:$gray-color 1px solid;
+	// a.logo{
+	// 	background-image:url(../images/logo_bw.png);
+	// }
+	h6{
+		color:black;
+	}
+	p{
+		font-size: 0.7em;
+	}
+	ul.footer-main-nav{
+		li{
+			font-size: 0.7em; 
+			a{
+				color:$top-nav-link-color;
+				display:block;
+				&:hover{
+					color:$primary-color;
+					@include transition-duration($base-transition-duration)
+				}
+			}
+		}
+	}
+}

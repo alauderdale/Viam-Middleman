@@ -18,5 +18,11 @@ $(document).ready(function(){
         $( "html" ).toggleClass( "nav-open" );
     });
 
+    //company tabs
+    $('#myTab a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
 
 });

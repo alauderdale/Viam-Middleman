@@ -301,6 +301,7 @@ h1 {
 }
 h2 { 
   font-size: 1.6em; 
+  margin-bottom:$baseline;
 }
 h3 { 
   font-size: 1.3em; 
@@ -310,6 +311,7 @@ h4 {
 }
 h5 { 
   font-size: 0.9em;
+  font-family:$bold-font-name;
 }
 h6 { 
   font-size: 0.7em;  
@@ -321,7 +323,11 @@ p{
   color:$body-text-color;
   line-height:1.8em;
   margin-bottom:$baseline/2;
+  &.lead{
+    line-height:2em;
+  }
 }
+
 
 .signature{
   font-family:$light-font-name;

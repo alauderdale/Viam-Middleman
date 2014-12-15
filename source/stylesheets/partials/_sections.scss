@@ -4,6 +4,9 @@ section{
   &.off-white-bg{
   	background:url(../images/off_white_sec_bg.png) repeat-y right;
   }
+  &.inverse-secion{
+  	@extend %white_text;
+  }
 }
 
 

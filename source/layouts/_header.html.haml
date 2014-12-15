@@ -1,11 +1,11 @@
 %header.main-nav-container
 	.container
 		.pull-left
-			%a.logo{:href=>"#"}
+			%a.logo{:href=>"/"}
 		.pull-right
 			%ul.list-inline.desktop-nav
-				%li.active
-					%a{:href=>"#"}
+				%li{:class => (current_page.data.activeclass === "company") ? "active" : ""}
+					%a{:href=>"/company"}
 						Company
 				%li
 					%a{:href=>"#"}
@@ -28,7 +28,7 @@
 		.clearfix
 		%ul.list-unstyled.mobile-nav-main
 			%li.active
-				%a{:href=>"#"}
+				%a{:href=>"/company"}
 					Company
 			%li
 				%a{:href=>"#"}
