@@ -27,7 +27,10 @@
 			%i.fa.fa-times
 		.clearfix
 		%ul.list-unstyled.mobile-nav-main
-			%li.active
+			%li{:class => (current_page.data.activeclass === "home") ? "active" : ""}
+				%a{:href=>"/"}
+					Home
+			%li{:class => (current_page.data.activeclass === "company") ? "active" : ""}
 				%a{:href=>"/company"}
 					Company
 			%li

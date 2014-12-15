@@ -1,8 +1,13 @@
 #global-footer{
 	border-top:$gray-color 1px solid;
-	// a.logo{
-	// 	background-image:url(../images/logo_bw.png);
-	// }
+
+	.logo-container{
+		p{
+			@include breakpoint(sm){
+				margin-bottom:$baseline!important;
+			}
+		}
+	}
 	h6{
 		color:black;
 	}
@@ -10,6 +15,7 @@
 		font-size: 0.7em;
 	}
 	ul.footer-main-nav{
+		margin-bottom:$baseline;
 		li{
 			font-size: 0.7em; 
 			a{
