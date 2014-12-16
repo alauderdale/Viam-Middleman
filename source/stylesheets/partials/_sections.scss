@@ -6,7 +6,7 @@ section{
   }
   &.inverse-secion{
   	@extend %white_text;
-    background-color:shade($primary-color,80%);
+    background-color:shade($link-color,80%);
   }
   &.founder-section{
   	background:url(../images/company/headshot.png) right bottom no-repeat;
