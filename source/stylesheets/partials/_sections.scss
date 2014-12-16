@@ -30,6 +30,16 @@ section{
   	h5{
   		color:$primary-color;
   	}
+    .item{
+      padding:$baseline $baseline/2;
+      cursor:pointer;
+      @include transition(linear all $base-transition-duration);
+      position:relative;
+      &:hover{
+        box-shadow:0 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius:$base-border-radius;
+      }
+    }
   }
 }
 
