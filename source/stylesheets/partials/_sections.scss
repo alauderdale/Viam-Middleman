@@ -7,6 +7,29 @@ section{
   &.inverse-secion{
   	@extend %white_text;
   }
+  &.founder-section{
+  	background:url(../images/company/headshot.png) right bottom no-repeat;
+  	.text-container{
+	  	@include breakpoint(sm){
+				h1,h2,h3,h4,h5,h6,p,small,li{
+			    color:white!important;
+			  }
+	  		background:rgba(255,102,0,.8);
+	  		text-align:center;
+	  		padding:$baseline/2;
+
+	  	}
+  	}
+  }
+  &.apart-section{
+  	background:url(../images/company/apart_bg.png) no-repeat right bottom;
+  	background-size:cover;
+  }
+  &.icons-section{
+  	h5{
+  		color:$primary-color;
+  	}
+  }
 }
 
 

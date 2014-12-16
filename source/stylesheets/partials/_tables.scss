@@ -64,4 +64,14 @@
 			}
 		}
 	}
+	.tab-pane{
+		padding-top:$baseline*2;
+		min-height:200px;
+		h5{
+			color:$primary-color!important;
+		}
+		@include breakpoint(sm){
+			padding-top:0;
+		}
+	}
 }
