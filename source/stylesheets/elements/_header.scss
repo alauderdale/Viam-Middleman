@@ -38,6 +38,7 @@ header{
 				&.active{
 					a{
 						border-bottom:2px solid $top-nav-link-color;
+						color:$text-color;
 						&:hover{
 							border-color:$primary-color;
 						}
